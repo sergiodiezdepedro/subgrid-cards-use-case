@@ -1,0 +1,53 @@
+@layer general-styling {
+  html {
+    color-scheme: dark light;
+    font-family: system-ui;
+  }
+  body {
+    margin: 0;
+  }
+}
+
+main {
+  width: 90%;
+  margin-inline: auto;
+}
+
+main > p {
+  margin-bottom: 3rem;
+}
+
+main > p code {
+  font-size: 1rem;
+  font-weight: bold;
+  color: hsl(9, 100%, 64%);
+}
+
+header h1 {
+  text-align: center;
+}
+
+.grid-wrapper {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.grid-card {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  padding: 1.5rem;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 4px;
+}
+
+.grid-card h2 {
+  text-align: center;
+}
+
+.grid-card img {
+  max-width: 100%;
+  display: block;
+  border-radius: 4px;
+}
