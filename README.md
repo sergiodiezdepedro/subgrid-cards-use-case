@@ -1,0 +1,1 @@
+A use case of subgrid that allows the contents of the boxes to align perfectly, even when they need to be adjusted in a responsive mode.
